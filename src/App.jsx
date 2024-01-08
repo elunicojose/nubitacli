@@ -2,14 +2,8 @@ import { useEffect, useState } from "react";
 
 function App() {
   let [backendData, setBackendData] = useState([]);
-
-  //const chu = process.env.VITE_BASE_URL || 'no hay url';
-  console.log('BASE URL= ', import.meta.env.VITE_BASE_URL)
-
-  console.log('VALOR ENV= ', import.meta.env.VITE_SOME_KEY) // 123
-  console.log('node env= ', import.meta.env.VITE_NODE_ENV) 
-  console.log(import.meta.env)
-  
+  console.log('meta VITE_BASE URL= ', import.meta.env.VITE_BASE_URL)
+  console.log('process VITE_BASE URL= ', process.env.VITE_BASE_URL)
 
   useEffect(() => {
     
