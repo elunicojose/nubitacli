@@ -22,7 +22,7 @@ export default ({ mode }) => {
     server: {
       proxy: {
         '/frutas': {
-          target: process.env.VITE_BASE_URL,
+          target: 'https://nubitamix.vercel.app',
           changeOrigin: true,
           secure: false,
           //rewrite: (path) => path.replace(/^\/api/, ''),

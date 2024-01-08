@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 
 function App() {
   let [backendData, setBackendData] = useState([]);
-  console.log('meta VITE_BASE URL= ', import.meta.env.VITE_BASE_URL)
-  console.log('process VITE_BASE URL= ', process.env.VITE_BASE_URL)
-
+  console.log('meta SERVER URL= ', import.meta.env.SERVER_URL)
+  
   useEffect(() => {
     
     async function fetchData() {
