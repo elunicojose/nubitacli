@@ -20,7 +20,7 @@ function App() {
     <div>
       { backendData ? (
         backendData.map((fruta, i) => (
-        <h1 key={i}>{fruta.nombre}</h1>
+        <h3 key={i}>{fruta.nombre} : {fruta.costo}</h3>
         ))
       ) : (
         <p>Loading...</p>
